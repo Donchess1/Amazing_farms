@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- Source Codes By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Website HTML and CSS | CodingNepal</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Box Icon Link for Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+	   <!-- Header & Navbar Section -->
+    <header>
+      <nav>
+        <div class="nav_logo">
+          <a href="#">
+            <img src="images/coffee_logo.png" alt="Coffee Logo" />
+            <h2>Coffee</h2>
+          </a>
+        </div>
+
+        <input type="checkbox" id="click" />
+        <label for="click">
+          <i class="menu_btn bx bx-menu"></i>
+          <i class="close_btn bx bx-x"></i>
+        </label>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  {% block content %}
+
+  {% endblock %}
+  <!-- Footer Section -->
+    <footer>
+      <div class="section_container">
+        <div class="footer_section">
+          <div class="footer_logo">
+            <a href="index.html">
+              <img src="images/coffee_logo.png" alt="Coffee Logo" />
+              <h2>Coffee</h2>
+            </a>
+          </div>
+
+          <div class="useful_links">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#why">Why Us</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="contact_us">
+		   <h3>Contact</h3>
+            <ul>
+              <li>
+                <i class="bx bx-current-location"></i>
+                <span>Berndorf, Germany</span>
+              </li>
+              <li>
+                <i class="bx bxs-phone-call"></i> <span>+01 92728239</span>
+              </li>
+              <li>
+                <i class="bx bxs-time-five"></i>
+                <span>Mon-Sun : 10:00 AM - 7:00 PM</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="follow_us">
+            <h3>Follow</h3>
+            <i class="bx bxl-facebook-circle"></i>
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-instagram-alt"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
